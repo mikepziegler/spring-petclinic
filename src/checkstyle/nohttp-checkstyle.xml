@@ -7,4 +7,12 @@
 	<module name="SuppressionFilter">
 		<property name="file" value="${config_loc}/nohttp-checkstyle-suppressions.xml"/>
 	</module>
+	<module name="FinalParameters">
+		<property name="tokens" value="METHOD_DEF,CTOR_DEF"/>
+		<property name="ignorePrimitiveTypes" value="true"/>
+		<property name="enabled" value="false"/>
+	</module>
+	<module name="LineLength">
+		<property name="max" value="120"/>
+	</module>
 </module>
