@@ -209,7 +209,7 @@
         </dependencies>
         <executions>
           <execution>
-            <id>nohttp-checkstyle-validation</id>
+            <id>full-checkstyle-validation</id>
             <goals>
               <goal>check</goal>
             </goals>
