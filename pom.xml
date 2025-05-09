@@ -217,8 +217,16 @@
             <configuration>
               <configLocation>src/checkstyle/checkstyle.xml</configLocation>
               <sourceDirectories>${basedir}</sourceDirectories>
-              <includes>**/*</includes>
-              <excludes>**/.git/**/*,**/.idea/**/*,**/target/**/,**/.flattened-pom.xml,**/*.class</excludes>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+              <excludes>
+                <exclude>**/.git/**/*</exclude>
+                <exclude>**/.idea/**/*</exclude>
+                <exclude>**/target/**/</exclude>
+                <exclude>**/.flattened-pom.xml</exclude>
+                <exclude>**/*.class</exclude>
+              </excludes>
               <propertyExpansion>config_loc=${basedir}/src/checkstyle/</propertyExpansion>
             </configuration>
           </execution>
