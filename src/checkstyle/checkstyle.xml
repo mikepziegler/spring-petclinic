@@ -6,10 +6,6 @@
 <module name="Checker">
 	<module name="io.spring.nohttp.checkstyle.check.NoHttpCheck" />
 	<module name="LineLength">
-		<property name="max" value="120">
-		</property>
-	</module>
-	<module name="TreeWalker">
-
+		<property name="max" value="120"/>
 	</module>
 </module>
