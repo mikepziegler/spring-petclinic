@@ -21,11 +21,6 @@
                   value="^package.*|^import.*|href\\s*=\\s*&quot;[^&quot;]*&quot;|http://|https://|ftp://"/>
     </module>
 
-    <!-- Allow wildcard imports -->
-    <module name="AvoidStarImport">
-        <property name="allowStatic" value="true"/>
-    </module>
-
     <!-- Relax Javadoc requirements -->
     <module name="JavadocMethod">
         <property name="scope" value="public"/>
