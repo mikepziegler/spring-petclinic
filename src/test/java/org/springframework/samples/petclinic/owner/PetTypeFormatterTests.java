@@ -42,7 +42,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 @DisabledInNativeImage
 class PetTypeFormatterTests {
 
-	@Mock
 	private OwnerRepository pets;
 
 	private PetTypeFormatter petTypeFormatter;

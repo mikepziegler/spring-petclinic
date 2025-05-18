@@ -59,7 +59,6 @@ class CrashControllerIntegrationTests {
 	@Value(value = "${local.server.port}")
 	private int port;
 
-	@Autowired
 	private TestRestTemplate rest;
 
 	@Test

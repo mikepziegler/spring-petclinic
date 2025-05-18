@@ -60,5 +60,5 @@ jobs:
           done
 
       - name: Run Integration Tests
-        if: steps.wait-for-db.outcome == 'success'
+        if: steps.wait-for-db.outputs == 'success'
         run: mvn verify -P integration

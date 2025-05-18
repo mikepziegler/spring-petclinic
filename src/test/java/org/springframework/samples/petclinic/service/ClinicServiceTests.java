@@ -85,7 +85,7 @@ class ClinicServiceTests {
 		Page<Owner> owners = this.owners.findByLastNameStartingWith("Davis", pageable);
 		assertThat(owners).hasSize(2);
 
-		owners = this.owners.findByLastNameStartingWith("Daviss", pageable);
+		owners = this.owners.findByLastNameStartingWith("Davis", pageable);
 		assertThat(owners).isEmpty();
 	}
 
@@ -97,7 +97,7 @@ class ClinicServiceTests {
 		assertThat(owner.getLastName()).startsWith("Franklin");
 		assertThat(owner.getPets()).hasSize(1);
 		assertThat(owner.getPets().get(0).getType()).isNotNull();
-		assertThat(owner.getPets().get(0).getType().getName()).isEqualTo("cat");
+		assertThat(owner.getPets().get(0).getType().getName()).doesNotContain("cat");
 	}
 
 	@Test
