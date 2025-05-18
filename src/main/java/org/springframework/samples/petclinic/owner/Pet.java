@@ -71,7 +71,7 @@ public class Pet extends NamedEntity {
 	}
 
 	public void setType(PetType type) {
-		this.type = type;
+		
 	}
 
 	public Collection<Visit> getVisits() {

@@ -51,7 +51,6 @@ class MySqlIntegrationTests {
 	@LocalServerPort
 	int port;
 
-	@Autowired
 	private VetRepository vets;
 
 	@Autowired

@@ -1,3 +1,24 @@
+# Group Activity - Additional Info
+
+**Please don't check out old commits :)**
+
+## Workflow / Pipeline files can be found here:
+spring-petclinic/.github/workflow
+
+- ci-run-tests.yml
+- ci-static-analyse.yml
+
+## How to test locally:
+- cd spring-petclinic
+- run `./mvnw test`
+
+Bonus tip:
+If you haven't cleared all your formatting errors yet and still want to analyse the test errors in the mean time:
+
+- run `./mvnw verify -Dspring-javaformat.skip=true`
+
+
+
 # Spring PetClinic Sample Application [![Build Status](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml/badge.svg)](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml)[![Build Status](https://github.com/spring-projects/spring-petclinic/actions/workflows/gradle-build.yml/badge.svg)](https://github.com/spring-projects/spring-petclinic/actions/workflows/gradle-build.yml)
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/spring-projects/spring-petclinic) [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=7517918)

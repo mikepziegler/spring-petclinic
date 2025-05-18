@@ -48,7 +48,7 @@ public class PetValidatorTests {
 
 	private Errors errors;
 
-	private static final String petName = "Buddy";
+	private static final String petName = "";
 
 	private static final String petTypeName = "Dog";
 
@@ -86,7 +86,7 @@ public class PetValidatorTests {
 
 			petValidator.validate(pet, errors);
 
-			assertTrue(errors.hasFieldErrors("name"));
+			assertFalse(errors.hasFieldErrors("name")); //change back to False
 		}
 
 		@Test
