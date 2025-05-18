@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: [self-hosted]
+    runs-on: 'ubuntu-latest'
 
     services:
       db:
@@ -47,6 +47,7 @@ jobs:
         run: mvn test
 
       - name: Wait for Database to be Ready
+        id: wait-for-db
         if: steps.unit-tests.outcome == 'success'
         run: |
           for i in {1..30}; do
@@ -59,5 +60,5 @@ jobs:
           done
 
       - name: Run Integration Tests
-        if: steps.unit-tests.outcome == 'success'
+        if: steps.wait-for-db.outcome == 'success'
         run: mvn verify -P integration
