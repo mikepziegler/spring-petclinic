@@ -58,7 +58,6 @@ class PetControllerTests {
 	@Autowired
 	private MockMvc mockMvc;
 
-	@MockitoBean
 	private OwnerRepository owners;
 
 	@BeforeEach

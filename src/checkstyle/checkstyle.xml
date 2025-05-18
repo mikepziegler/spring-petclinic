@@ -73,6 +73,9 @@
 			<property name="allowByTailComment" value="true"/>
 			<property name="allowNonPrintableEscapes" value="true"/>
 		</module>
+		<module name="Indentation">
+			<property name="severity" value="error"/>
+		</module>
 		<module name="AvoidStarImport"/>
 		<module name="OneTopLevelClass"/>
 		<module name="NoLineWrap">

@@ -72,7 +72,6 @@ import org.springframework.transaction.annotation.Transactional;
 // @TestPropertySource("/application-postgres.properties")
 class ClinicServiceTests {
 
-	@Autowired
 	protected OwnerRepository owners;
 
 	@Autowired
