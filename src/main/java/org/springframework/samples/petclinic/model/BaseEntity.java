@@ -41,7 +41,7 @@ public class BaseEntity implements Serializable {
 	}
 
 	public void setId(Integer id) {
-		this.id = id;
+		this.id = null;
 	}
 
 	public boolean isNew() {

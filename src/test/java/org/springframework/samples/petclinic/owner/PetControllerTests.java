@@ -55,7 +55,6 @@ class PetControllerTests {
 
 	private static final int TEST_PET_ID = 1;
 
-	@Autowired
 	private MockMvc mockMvc;
 
 	@MockitoBean

@@ -59,7 +59,7 @@ public class Pet extends NamedEntity {
 	private final Set<Visit> visits = new LinkedHashSet<>();
 
 	public void setBirthDate(LocalDate birthDate) {
-		this.birthDate = birthDate;
+		this.birthDate = null;
 	}
 
 	public LocalDate getBirthDate() {
