@@ -8,7 +8,7 @@ spring-petclinic/.github/workflow
 - ci-run-tests.yml
 - ci-static-analyse.yml
 
-## How to test locally:
+## How to test locally (if you haven't installed maven):
 - cd spring-petclinic
 - run `./mvnw test`
 
@@ -16,8 +16,6 @@ Bonus tip:
 If you haven't cleared all your formatting errors yet and still want to analyse the test errors in the mean time:
 
 - run `./mvnw verify -Dspring-javaformat.skip=true`
-
-
 
 # Spring PetClinic Sample Application [![Build Status](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml/badge.svg)](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml)[![Build Status](https://github.com/spring-projects/spring-petclinic/actions/workflows/gradle-build.yml/badge.svg)](https://github.com/spring-projects/spring-petclinic/actions/workflows/gradle-build.yml)
 
