@@ -385,8 +385,6 @@
 			<property name="tokens" value="METHOD_DEF, CTOR_DEF, ANNOTATION_FIELD_DEF, COMPACT_CTOR_DEF"/>
 		</module>
 		<module name="MissingJavadocMethod">
-			<property name="severity" value="error"/>
-			<property name="severity" value="error"/>
 			<property name="scope" value="protected"/>
 			<property name="allowMissingPropertyJavadoc" value="true"/>
 			<property name="allowedAnnotations" value="Override, Test"/>
