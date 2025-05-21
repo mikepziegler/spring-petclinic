@@ -386,6 +386,7 @@
 		</module>
 		<module name="MissingJavadocMethod">
 			<property name="severity" value="error"/>
+			<property name="severity" value="error"/>
 			<property name="scope" value="protected"/>
 			<property name="allowMissingPropertyJavadoc" value="true"/>
 			<property name="allowedAnnotations" value="Override, Test"/>
